@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>login page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="project_one.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+  
+</head>
+<body class="justify-content-center ">
+  <div style="margin: 0px; padding: 0px;"  class="row col-12">
+    <div class="col-6">
+        <img class="logo" src="https://i.pinimg.com/originals/f4/e3/f3/f4e3f349769e8d7d212caaa42dda64d1.jpg" alt="comapany_logo">
+        <p class="company_name">Eowyn ©</p>  
+    </div>
+       
+      <div style="padding: 0px;" id="div-nav" class="row  col-6 justify-content-end ">
+        <nav class="nav_bar">
+          <ul>
+              <li class="lg-nav"><a class="nav_link" href="codepen-index.html">Home</a></li>
+              <li class="lg-nav"><a class="nav_link" href="codepen-index.html#products">Products</a></li>
+              <li class="lg-nav"><a class="nav_link" href="codepen-index.html#contacts">Contacts</a></li>
+              <li class="lg-nav"><a class="nav_link" href="">blog</a></li>
+          </ul>
+      </nav>
+            <nav id="nav-collaps" class="navbar navbar-expand-lg  navbar-light  hamburger col-3">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse  justify-content-end " id="collapsible">
+              
+                <ul class="navbar-nav flex-end">
+                  <li class="nav-item"><a class="nav-link" href="codepen-index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="codepen-index.html#products">Product</a></li>
+                  <li class="nav-item"><a class="nav-link" href="codepen-index.html#contacts">Contacts</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                </ul>
+              </div>
+            </nav>   
+      </div>   
+     
+  </div>
+        
+    <div class="row justify-content-center col-12 h1 ">
+        <h1>Log in</h1>
+    </div>
+    <div class="row login-div justify-content-center col-12 col-md-4 border border-dark rounded">
+          <div class="form-group">
+            <label class="username-label" for="username">Username</label>
+            <input type="text"
+              class="form-control" name="" id="username"  placeholder="">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="" id="password" placeholder="">
+          </div>
+          <div class="form-check col-8 text-center">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input " name="" id="remember-me" value="checkedValue" unchecked >
+              Remember me
+            </label>
+          </div>
+          <div class="row col-12 justify-content-center submit">
+              <button type="submit" class="btn btn-primary">Log in</button>
+          </div>
+          <div class="col-12 text-center">
+              <div class="col-12 submit">
+                <a id="registration-form" href="">You don't have account yet? Sign in.</a>
+              </div>
+              <div class="col-12 submit">
+                <a href="">You forgot your password?</a>
+              </div>
+          </div>
+    </div>
+</body>
+</html>
+
+<style>
+    body{ 
+        background-color: #dadde0;
+        padding: 25px;
+    }
+    .h1{
+        margin-top: 30PX ;
+    }
+    .login-div{
+        margin: auto;
+        padding: 20px;
+        margin-top: 50px;
+    }
+    #registration-2nd-password{
+        display: none;
+    }
+    .form-check{
+        display: block;
+    }
+    .submit{
+        margin-top: 15px;
+    }
+    a{
+        margin:15px 0px
+    }
+    #nav-collaps{
+        display: none;
+      }
+    @media only screen and (max-width: 992px){
+      #nav-collaps{
+        display: inline ;
+      }
+    }
+    
+</style>
